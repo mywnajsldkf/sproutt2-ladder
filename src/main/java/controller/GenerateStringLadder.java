@@ -1,7 +1,7 @@
 package controller;
 
 import model.Line;
-import model.Participant;
+import model.Player;
 import model.Winning;
 
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ public class GenerateStringLadder {
     private static final String EMPTY = "     ";
     private static final String CONNECTION = "-----";
 
-    public List<ArrayList<String>> generateStringLadder(List<Participant> participants, List<Line> lines, List<Winning> winnings) {
+    public List<ArrayList<String>> generateStringLadder(List<Player> players, List<Line> lines, List<Winning> winnings) {
         List<ArrayList<String>> generatedStringLadder = new ArrayList<>();
 
-        generatedStringLadder.add(toStringParticipantList(participants));
+        // generatedStringLadder.add(toStringParticipantList(players));
 
         for (Line value : lines) {
             ArrayList<String> generatedLine = new ArrayList<>();
@@ -34,20 +34,25 @@ public class GenerateStringLadder {
             generatedStringLadder.add(generatedLine);
         }
 
-        generatedStringLadder.add(toStringWinningList(winnings));
+        //generatedStringLadder.add(toStringWinningList(winnings));
 
         return generatedStringLadder;
     }
 
-    private ArrayList<String> toStringParticipantList(List<Participant> participants) {
+    /*
+    private ArrayList<String> toStringParticipantList(List<Player> players) {
         ArrayList<String> stringParticipantList = new ArrayList<>();
-        for (Participant participant : participants) {
-            stringParticipantList.add(participant.getName());
+        for (Player player : players) {
+            stringParticipantList.add(player.getName());
             stringParticipantList.add("  ");
         }
         return stringParticipantList;
     }
 
+     */
+
+
+    /*
     private ArrayList<String> toStringWinningList(List<Winning> winnings) {
         ArrayList<String> stringWinningList = new ArrayList<>();
         for (Winning winning : winnings) {
@@ -56,4 +61,6 @@ public class GenerateStringLadder {
         }
         return stringWinningList;
     }
+
+     */
 }

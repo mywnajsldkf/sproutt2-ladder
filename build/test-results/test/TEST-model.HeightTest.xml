@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.HeightTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-24T10:34:08" hostname="JeonginKimui-MacBookAir.local" time="0.053">
+  <properties/>
+  <testcase name="should_success_when_height_is_over_1()" classname="model.HeightTest" time="0.053"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

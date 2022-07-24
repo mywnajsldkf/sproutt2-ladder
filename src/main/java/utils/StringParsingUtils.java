@@ -22,7 +22,7 @@ public class StringParsingUtils {
         return input.split(COMMA);
     }
 
-    public static String removeBlank(String input) {
+    private static String removeBlank(String input) {
         return input.replaceAll(BLANK_REGEX, EMPTY);
     }
 }

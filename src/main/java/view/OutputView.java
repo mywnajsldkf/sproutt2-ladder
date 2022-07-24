@@ -10,6 +10,4 @@ public class OutputView {
     public static void outputStringLadder() {
 
     }
-
-
 }
